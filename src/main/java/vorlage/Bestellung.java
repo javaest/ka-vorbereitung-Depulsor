@@ -5,8 +5,8 @@ import java.util.Date;
 import java.util.List;
 
 public class Bestellung {
-    private int bestellnummer;
-    private Date bestelldatum;
+    public int bestellnummer;
+    public Date bestelldatum;
     private List<Gericht> gerichte;
     private Kunde kunde;
     private Kellner kellner;
@@ -25,6 +25,18 @@ public class Bestellung {
 
     public void gesamtbetragBerechnen() {
    
+    }
+    
+    public List<Gericht> getGerichte() {
+    	return gerichte;
+    }
+    
+    public Kellner getKellner() {
+    	return kellner;
+    }
+    
+    public Kunde getKunde() {
+    	return kunde;
     }
 
 	public Bestellung(int bestellnummer, Date bestelldatum, Kunde kunde, Kellner kellner) {
