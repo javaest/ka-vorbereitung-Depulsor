@@ -1,7 +1,25 @@
 package vorlage;
 
 public class Kellner extends Person {
-    private int mitarbeiterID;
+    public int mitarbeiterID;
+    private String name;
+    
+    public String getName() {
+    	return name;
+    }
+    
+    public void setName(String name) {
+    	this.name = name;
+    }
+    
+    public void setMitarbeiterID(int id) {
+    	this.mitarbeiterID = id;
+    }
+    
+    public int getMitarbeiterID() {
+    	return mitarbeiterID;
+    }
+    
 	public Kellner(String name, int mitarbeiterID) {
 		super();
 		this.name = name;
