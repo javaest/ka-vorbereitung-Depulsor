@@ -20,8 +20,8 @@ public class Kellner extends Person {
     	return mitarbeiterID;
     }
     
-	public Kellner(String name, int mitarbeiterID) {
-		super();
+	public Kellner(String name, int mitarbeiterID) throws Exception {
+		super(name);
 		this.name = name;
 		this.mitarbeiterID = mitarbeiterID;
 	}
